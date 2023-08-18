@@ -12,8 +12,6 @@ body {
     background-color: black;
     color: white;
 
-    padding: 2rem 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +21,14 @@ h1{
     font-family: 'Parta';
     font-size: 5rem;
     font-weight: 300;
+    margin: 2rem 0;
+}
+
+h2{
+    font-family: 'Parta';
+    font-size: 3.5rem;
+    font-weight: lighter;
+    margin: 2rem 0;
 }
 
 p{
@@ -76,7 +82,7 @@ header nav{
 
 .navName{
     font-family: "Parta";
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     font-weight: lighter;
 
     margin: auto 0;
@@ -112,11 +118,16 @@ nav a:hover::after{
     width: 100%
 }
 
+header, 
+main{
+    width:90%;
+}
 
 @media screen and (max-width: 1800px){
     header,
     main{
-        width: 100%
+        width: 100%;
+        padding: 6rem 2rem;
     }
 }
 
@@ -134,7 +145,7 @@ nav a:hover::after{
     width: 60%;
 }
 
-.content > p {
+.content > p, .site > p {
     max-width: 800px;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -142,11 +153,31 @@ nav a:hover::after{
 }
 
 .twist{
-    width: 100%;
     display: flex;
+    justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
+    gap: 6rem;
 }
 
-.twist img{
-    margin: 0 2rem;
+
+.sites{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    width: 100%;
+    margin: 6rem 0;
+    gap: 6rem;
+}
+
+.site{
+    display: flex;
+    flex-direction: column;
+}
+
+.greyContainer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: gray;
 }

@@ -14,12 +14,12 @@ class Companies extends React.Component{
     render(){
         return (
             <div className="twist">
-                <img src={walmart} alt=""/>
-                <img src={jp} alt=""/>
-                <img src={visa} alt=""/>
-                <img src={tinder} alt=""/>
-                <img src={samsung} alt=""/>
-                <img src={verizon} alt=""/>
+                    <img src={walmart} alt=""/>
+                    <img src={jp} alt=""/>
+                    <img src={visa} alt=""/>
+                    <img src={tinder} alt=""/>
+                    <img src={samsung} alt=""/>
+                    <img src={verizon} alt=""/>
             </div>
         )
     }
